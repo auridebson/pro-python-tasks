@@ -1,8 +1,31 @@
 from db import *
 from functions import *
 
+# INÍCIO FUNÇÕES DO PY TASK -------------------------------------
+
 def ln(x):
     print("-"*x)
+
+def add_task():
+    descricao = input("Digite a descrição da tarefa: ")
+    categoria = input("Digite a categoria da tarefa: ")
+    prioridade = int(input("Defina a prioridade - de 0 a 3: "))
+
+    dic_task = {
+        "Descrição": descricao,
+        "Categoria": categoria,
+        "Prioridade": prioridade,
+        "Concluido": False
+    }
+
+    db_tarefas.append(dic_task)
+
+
+def list_tasks():
+    for item in db_tarefas:
+        print(item)
+
+# FIM FUNÇÕES DO PY TASK -------------------------------------
 
 print("Sistema Py Task")
 ln(30)
@@ -18,9 +41,9 @@ while True:
             """))
     match menu:
         case 1:
-            print("Chamar a função para o item correspondente")
+            add_task()
         case 2:
-            print("Chamar a função para o item correspondente")
+            list_tasks()
         case 3:
             print("Concluídas...")
         case 4:

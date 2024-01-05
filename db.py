@@ -1,7 +1,3 @@
-tarefa = {
-    "descricao":"",
-    "categoria":"",
-    "prioridade":0
-}
+tarefa = { }
 
 db_tarefas = []
