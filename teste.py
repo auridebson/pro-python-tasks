@@ -34,4 +34,10 @@ def list_tasks():
         """)
 
 
-list_tasks()
+def alter_task():
+    index_task = int(input("Deseja concluir qual tarefa? "))
+    db_tarefas[index_task]['Concluido'] = True
+    print(db_tarefas[index_task])
+
+
+alter_task()

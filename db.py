@@ -2,21 +2,21 @@ tarefa = { }
 
 db_tarefas = [
     {
-        'ID': '2024, 1, 5, 10, 28, 10, 783891', 
+        'ID': 1, 
         'Descrição': 'Banhar os cachorros', 
         'Categoria': 'Casa', 
         'Prioridade': 0, 
         'Concluido': False
     },
     {
-        'ID': '2024, 1, 5, 10, 28, 24, 969222', 
+        'ID': 2, 
         'Descrição': 'Comprar frutas para casa', 
         'Categoria': 'Casa', 
         'Prioridade': 2, 
         'Concluido': False
     },
     {
-        'ID': '2024, 1, 5, 10, 28, 24, 969222', 
+        'ID': 3, 
         'Descrição':'Estudar JavaScript',
         'Categoria': 'Estudos', 
         'Prioridade': 1, 

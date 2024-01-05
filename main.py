@@ -37,7 +37,9 @@ def list_tasks():
         """)
 
 def alter_task():
-    index_task = input("Deseja concluir qual tarefa?\n")
+    index_task = int(input("Deseja concluir qual tarefa?\n"))
+    db_tarefas[index_task]['Concluido'] = not db_tarefas[index_task]['Concluido']
+    list_tasks()
 
 
 # FIM FUNÇÕES DO PY TASK ----------------------------------------
@@ -60,9 +62,9 @@ while True:
         case 2:
             list_tasks()
         case 3:
-            print("Concluídas...")
+            alter_task()
         case 4:
-            print("Categorias...")
+            print("Exibindo categorias...")
         case 5:
             print("Prioridades...")
         case 0:
