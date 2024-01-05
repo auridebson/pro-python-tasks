@@ -23,3 +23,15 @@ db_tarefas = [
         'Concluido': False
     }
 ]
+
+def list_tasks():
+    for i, item in enumerate(db_tarefas):
+        print(f"""
+        {i+1}ª
+        Prioridade: {item['Prioridade']}
+        Descrição: {item['Descrição']}
+        Categoria: {item['Categoria']}
+        """)
+
+
+list_tasks()
