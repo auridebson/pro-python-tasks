@@ -1,5 +1,6 @@
 from db import *
 from functions import *
+from datetime import datetime
 
 # INÍCIO FUNÇÕES DO PY TASK -------------------------------------
 
@@ -7,11 +8,14 @@ def ln(x):
     print("-"*x)
 
 def add_task():
+    timestamp = str(datetime.now()),
     descricao = input("Digite a descrição da tarefa: ")
     categoria = input("Digite a categoria da tarefa: ")
-    prioridade = int(input("Defina a prioridade - de 0 a 3: "))
+    prioridade = int(input("Defina a prioridade - de 0 a 3: ")),
+    
 
     dic_task = {
+        "ID": timestamp,
         "Descrição": descricao,
         "Categoria": categoria,
         "Prioridade": prioridade,
