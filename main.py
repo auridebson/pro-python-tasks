@@ -7,11 +7,30 @@ def ln(x):
 print("Sistema Py Task")
 ln(30)
 
-input("Escolha uma opção:\n"
-    "    1 - Adicionar Tarefa\n"
-    "    2 - Listar tarefas\n"
-    "    3 - Marcar como concluído\n"
-    "    4 - Exibir tarefas por categoria\n"
-    "    5 - Exibir taregas por prioridade\n"
-    "    0 - Sair\n")
+while True:
+    menu = int(input("""Escolha uma opção:
+            1 - Adicionar Tarefa
+            2 - Listar tarefas
+            3 - Marcar como concluído
+            4 - Exibir tarefas por categoria
+            5 - Exibir taregas por prioridade
+            0 - Sair
+            """))
+    match menu:
+        case 1:
+            print("Chamar a função para o item correspondente")
+        case 2:
+            print("Chamar a função para o item correspondente")
+        case 3:
+            print("Concluídas...")
+        case 4:
+            print("Categorias...")
+        case 5:
+            print("Prioridades...")
+        case 0:
+            print("Saindo...")
+            break
+        
+
+
 
