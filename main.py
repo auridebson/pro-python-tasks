@@ -33,11 +33,14 @@ def list_tasks():
         Prioridade: {item['Prioridade']}
         Descrição: {item['Descrição']}
         Categoria: {item['Categoria']}
+        Status: {item['Concluido']}
         """)
-    ln(30)
+
+def alter_task():
+    index_task = input("Deseja concluir qual tarefa?\n")
 
 
-# FIM FUNÇÕES DO PY TASK -------------------------------------
+# FIM FUNÇÕES DO PY TASK ----------------------------------------
 
 print("Sistema Py Task")
 ln(30)
@@ -48,7 +51,7 @@ while True:
             2 - Listar tarefas
             3 - Marcar como concluído
             4 - Exibir tarefas por categoria
-            5 - Exibir taregas por prioridade
+            5 - Exibir tarefas por prioridade
             0 - Sair
             """))
     match menu:
@@ -66,6 +69,3 @@ while True:
             print("Saindo...")
             break
         
-
-
-
