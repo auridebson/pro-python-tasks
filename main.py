@@ -26,13 +26,16 @@ def add_task():
 
 
 def list_tasks():
-    for item in db_tarefas:
+    ln(30)
+    for i, item in enumerate(db_tarefas):
         print(f"""
-           Descrição: {item['descricao']}
-           Categoria: {item['categoria']}
-           Prioridade: {item['prioridade']}
-           Concluido: {item['concluido']}
+        {i+1}ª
+        Prioridade: {item['Prioridade']}
+        Descrição: {item['Descrição']}
+        Categoria: {item['Categoria']}
         """)
+    ln(30)
+
 
 # FIM FUNÇÕES DO PY TASK -------------------------------------
 
