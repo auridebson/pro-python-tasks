@@ -2,20 +2,22 @@ from db import *
 from functions import *
 from datetime import datetime
 
+# projetosfortal@infinityschool.com.br
+
 # INÍCIO FUNÇÕES DO PY TASK -------------------------------------
 
 def ln(x):
     print("-"*x)
 
 def add_task():
-    timestamp = str(datetime.now()),
+    id = len(db_tarefas),
     descricao = input("Digite a descrição da tarefa: ")
     categoria = input("Digite a categoria da tarefa: ")
-    prioridade = int(input("Defina a prioridade - de 0 a 3: ")),
+    prioridade = int(input("Defina a prioridade - de 0 a 3: "))
     
 
     dic_task = {
-        "ID": timestamp,
+        "ID": id,
         "Descrição": descricao,
         "Categoria": categoria,
         "Prioridade": prioridade,
@@ -64,9 +66,9 @@ while True:
         case 3:
             alter_task()
         case 4:
-            print("Exibindo categorias...")
+            print("Homens trabalhando...")
         case 5:
-            print("Prioridades...")
+            print("Homens trabalhando...")
         case 0:
             print("Saindo...")
             break
